@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import { connect } from "react-redux";
@@ -19,10 +19,14 @@ class App extends Component {
      const { data: users } = await axios.get(config.apiEndpoint);
      this.setState({ users });
      */
-    this.props.dispatch(fetchUser())
+    this.props.dispatch(fetchUser());
   }
 
   render() {
+    if (this.props.error) {
+      toast.error("An error occurred.");
+      return null;
+    }
     return (
       <React.Fragment>
         <ToastContainer />
