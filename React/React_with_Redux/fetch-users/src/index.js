@@ -8,9 +8,17 @@ import logger from 'redux-logger'
 import { reducer } from "./redux/reducers";
 import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
+import { composeWithDevTools } from 'redux-devtools-extension'
 // import { fetchUser } from './redux/actions';
 
-const store = createStore(reducer, applyMiddleware(thunkMiddleware, logger));
+const middlewares = [thunkMiddleware, logger];
+const store = createStore(
+    reducer,
+    undefined,
+    composeWithDevTools(
+        applyMiddleware(...middlewares)
+    )
+);
 
 //Subscribing and checking if store and dispatch is functional...
 // const unsubscribe = store.subscribe(() => {});
