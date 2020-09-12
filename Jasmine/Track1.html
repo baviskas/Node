@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="button" value="Track" id="btn">
+	<div id="result"></div>
+	<script>
+	(function myApp(){
+		var btn = document.getElementById("btn");
+		var count = 0;
+		var result = document.getElementById("result");
+		btn.addEventListener("click",track);
+		function track(){
+			count++;
+			result.innerHTML=count;
+		}
+	})();
+	//myApp();
+	</script>
+</body>
+</html>

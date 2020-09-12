@@ -1,0 +1,76 @@
+
+==========Factory function===========
+function Spinner(){
+	var count=1;
+	var up =function(){
+		return ++count;
+		//console.log(count);
+	};
+	var down =function(){
+		return --count;
+		//console.log(count);
+	};
+	return{
+		up:up,
+		down: down
+	};
+}
+var s = Spinner();
+s.up();
+
+function Spinner(){
+	var spinner = {
+		count: 1;
+		up: function(){
+			this.count++;
+		}
+		down: function(){
+			this
+		}
+	}
+}
+
+================function to check number is prime or not====================
+function isPrime(no){
+	var arr = new Array();
+	var cache =cache(no){
+		var i=2;
+		var flg = 0;
+		var bool;
+		while(i<no){
+			if(no%i == 0){
+				flg=1;
+				break;
+			}
+			i++;
+		}
+		if(flg == 0){
+			bool = true;
+		}
+		bool = false;
+		if (bool === true){
+			arr.push(no);
+		}
+		console.log(arr[arr.length-1]);
+		return arr;
+	};
+	return cache;
+}
+
+
+//Create class SalaryCalculator basic+hra+da-tax%
+//Constructor Function
+function SalaryCalculator(basic,hra,da,tax){
+	this.basic=basic;
+	this.hra=hra;
+	this.da=da;
+	this.tax=tax;
+	this.salary=0;
+	this.calulate=function(){
+		this.salary=this.salary + this.basic + this.hra + this.da - this.tax;
+		//var tax = this.salary
+		return this.salary;
+	}
+}
+var a = new SalaryCalculator(10000,10000,10000,1000);
+console.log(a.calculate());
