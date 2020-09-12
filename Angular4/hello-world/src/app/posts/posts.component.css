@@ -1,0 +1,21 @@
+.fetchPost {
+  margin-bottom: 1rem;
+}
+.fetchPost input{
+  display: inline-block;
+  width: 75%;
+}
+.fetchPost button.btn-secondary.btn {
+  display: inline-block;
+  width: 10%;
+  margin-left: 5%;
+}
+.fetchPost .currentPost {
+  min-height: 1rem;
+}
+.btn.btn-primary {
+  margin: 0 1rem;
+}
+.btn.btn-secondary {
+  margin: 0 1rem;
+}

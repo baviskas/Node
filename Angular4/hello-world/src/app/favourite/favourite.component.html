@@ -1,0 +1,26 @@
+<i
+  aria-hidden="true"
+  class="fa"
+  [ngClass]="{
+    'fa-star': isFavourite,
+    'fa-star-o': !isFavourite
+  }"
+  (click)="onClick()">
+</i>
+
+<!--Using class Binding-->
+<!--<i-->
+  <!--aria-hidden="true"-->
+  <!--class="fa"-->
+  <!--[class.fa-star]="isFavourite"-->
+  <!--[class.fa-star-o]="!isFavourite"-->
+  <!--(click)="onClick()">-->
+<!--</i>-->
+
+<!--<i -->
+  <!--aria-hidden="true" -->
+  <!--[class]="isFavourite-->
+    <!--?'fa fa-star'-->
+    <!--:'fa fa-star-o'"-->
+  <!--(click)="onClick()">-->
+<!--</i>-->

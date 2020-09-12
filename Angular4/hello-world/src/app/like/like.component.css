@@ -1,0 +1,6 @@
+.fa.fa-heart {
+  color: #cccccc;
+}
+.fa.fa-heart.highlighted {
+  color: deeppink;
+}

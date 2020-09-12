@@ -1,0 +1,17 @@
+.zippy {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.zippy .zippy-heading {
+  font-weight: bold;
+  padding: 20px;
+}
+.zippy .zippy-body {
+  padding: 20px;
+}
+.expanded {
+  background: #f0f0f0;
+}
+.fa-chevron-up,.fa-chevron-down {
+  float: right;
+}

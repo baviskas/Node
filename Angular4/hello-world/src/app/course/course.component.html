@@ -1,0 +1,36 @@
+<div *ngIf="courses.length; then coursesList else noCourse">
+</div>
+<ng-template #coursesList>
+  <p *ngFor="let course of courses">{{course}}</p>
+</ng-template>
+<ng-template #noCourse>
+  No course available for display.
+</ng-template>
+<br/><br/>
+
+<ul class="nav nav-pills">
+  <li class="nav-item"><a class="nav-link" [class.active]="viewModel == 'map'" (click)="viewModel = 'map'"> Map View </a></li>
+  <li class="nav-item"><a class="nav-link" [class.active]="viewModel == 'list'" (click)="viewModel = 'list'"> List View </a></li>
+</ul>
+<div [ngSwitch]="viewModel">
+  <div *ngSwitchCase="'map'">Map View Content.</div>
+  <div *ngSwitchCase="'list'">List View Content.</div>
+  <div *ngSwitchDefault>Otherwise.</div>
+</div>
+<br/><br/>
+
+
+<button [ngStyle]="{
+   'backgroundColor': canSave ? 'blue': 'grey',
+  'color': canSave ? 'white': 'black'}"
+  (click)="onAdd()"
+>Add</button>
+<ul>
+  <li *ngFor="let course of courses; even as isEven">
+    {{course}}: <span *ngIf="isEven"> (EVEN)</span> <button (click)="onRemove(course)">Remove</button>
+  </li>
+</ul>
+
+<input type="text" appInputFormat [format]="'uppercase'">
+
+

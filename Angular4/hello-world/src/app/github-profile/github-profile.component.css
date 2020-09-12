@@ -1,0 +1,6 @@
+.profile {
+  margin-top: 2rem;
+}
+.profileName,.profileId {
+  font-weight: bold;
+}

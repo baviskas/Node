@@ -1,0 +1,32 @@
+<div class="fetchPost">
+  <label for="postId">
+    Enter Post Id:
+  </label>
+  <input
+    type="text"
+    class="form-control"
+    #postId id="postId"
+  >
+  <button class="btn btn-secondary" (click)="getPostById(postId)">Get post By Id</button>
+  <div class="currentPost" [hidden]="!currentPost">
+    Post title: {{currentPost}}
+  </div>
+</div>
+<ul class="list-group">
+  <label for="postTitle">
+    Enter Title for new Post:
+  </label>
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="addListItem(title)"
+      #title id="postTitle"
+    >
+  <li class="list-group-item"
+      *ngFor="let post of posts"
+  >
+    {{post.title}}
+    <button class="btn btn-primary" (click)="updatePost(post)">Update</button>
+    <button class="btn btn-secondary" (click)="deletePost(post)">Delete</button>
+  </li>
+</ul>
