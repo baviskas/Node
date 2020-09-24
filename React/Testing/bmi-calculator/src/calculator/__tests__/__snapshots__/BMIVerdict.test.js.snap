@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VinInput:  Smoke Test render smoketest for NAN 1`] = `""`;
+
+exports[`VinInput:  Smoke Test render smoketest for Obese 1`] = `
+"<p>
+   BMI is 
+  32
+  . 
+  You are Obese
+   
+</p>"
+`;
+
+exports[`VinInput:  Smoke Test render smoketest for normal weight 1`] = `
+"<p>
+   BMI is 
+  24
+  . 
+  You are Normal
+   
+</p>"
+`;
+
+exports[`VinInput:  Smoke Test render smoketest for over weight 1`] = `
+"<p>
+   BMI is 
+  29
+  . 
+  You are Overweight
+   
+</p>"
+`;
+
+exports[`VinInput:  Smoke Test render smoketest for under weight 1`] = `
+"<p>
+   BMI is 
+  17
+  . 
+  You are UnderWeight
+   
+</p>"
+`;

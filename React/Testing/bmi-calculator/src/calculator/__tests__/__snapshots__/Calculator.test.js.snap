@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator:  Smoke Test render smoketest 1`] = `
+"<Fragment>
+  <h1>
+    BMI Calculator:
+  </h1>
+  <AttributesInput value=\\"\\" attribute=\\"Weight\\" scale=\\"k\\" handler={[Function: bound handleWeightInKg]} />
+  <AttributesInput value=\\"\\" attribute=\\"Weight\\" scale=\\"p\\" handler={[Function: bound handleWeightInPounds]} />
+  <AttributesInput value=\\"\\" attribute=\\"Height\\" scale=\\"m\\" handler={[Function: bound handleHeight]} />
+  <BMIVerdict bmi={NaN} />
+</Fragment>"
+`;
+
+exports[`VinInput:  Smoke Test render smoketest 1`] = `
+"<Fragment>
+  <h1>
+    BMI Calculator:
+  </h1>
+  <AttributesInput value=\\"\\" attribute=\\"Weight\\" scale=\\"k\\" handler={[Function: bound handleWeightInKg]} />
+  <AttributesInput value=\\"\\" attribute=\\"Weight\\" scale=\\"p\\" handler={[Function: bound handleWeightInPounds]} />
+  <AttributesInput value=\\"\\" attribute=\\"Height\\" scale=\\"m\\" handler={[Function: bound handleHeight]} />
+  <BMIVerdict bmi={NaN} />
+</Fragment>"
+`;

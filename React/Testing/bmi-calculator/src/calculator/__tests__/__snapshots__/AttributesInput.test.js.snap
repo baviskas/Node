@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttributesInput:  Smoke Test render smoketest 1`] = `
+"<fieldset>
+  <legend>
+    Enter 
+    KiloGram
+     in 
+    Kilograms
+  </legend>
+  <input value={100} onChange={[Function (anonymous)]} />
+</fieldset>"
+`;
+
+exports[`VinInput:  Smoke Test render smoketest 1`] = `
+"<fieldset>
+  <legend>
+    Enter 
+    KiloGram
+     in 
+    Kilograms
+  </legend>
+  <input value={100} onChange={[Function (anonymous)]} />
+</fieldset>"
+`;
